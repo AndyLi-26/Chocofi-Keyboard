@@ -73,10 +73,10 @@
 
         num_dir {
             bindings = <
-&none  &split_h       &kp TAB         &kp UP_ARROW  &kp N4     &kp PAGE_UP      &kp PLUS   &kp N1  &kp N2         &kp N3  &kp ASTERISK  &none
-&none  &split_V       &kp LEFT_ARROW  &kp DOWN      &kp RIGHT  &kp PAGE_DOWN    &kp MINUS  &kp N4  &kp N5         &kp N6  &kp SLASH     &none
-&none  &kp LC(RG(Q))  &none           &none         &none      &none            &kp DOT    &kp N7  &kp N8         &kp N9  &kp N0        &none
-                                      &kp LGUI      &none      &kp SPACE        &kp RET    &mo 3   &kp BACKSPACE
+&none  &split_h       &kp TAB         &kp UP_ARROW  &kp N4         &kp PAGE_UP      &kp PLUS   &kp N1  &kp N2         &kp N3  &kp ASTERISK  &none
+&none  &split_V       &kp LEFT_ARROW  &kp DOWN      &kp RIGHT      &kp PAGE_DOWN    &kp MINUS  &kp N4  &kp N5         &kp N6  &kp SLASH     &none
+&none  &kp LC(RG(Q))  &kp LC(LEFT)    &kp LG(TAB)   &kp LC(RIGHT)  &none            &kp DOT    &kp N7  &kp N8         &kp N9  &kp N0        &none
+                                      &kp LGUI      &none          &kp SPACE        &kp RET    &mo 3   &kp BACKSPACE
             >;
 
             label = "1";
