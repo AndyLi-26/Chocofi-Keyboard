@@ -95,10 +95,10 @@
 
         short_Cuts {
             bindings = <
-&none  &none          &none  &none  &none  &none    &none  &none  &none  &none  &none  &none
-&none  &none          &none  &none  &none  &none    &none  &none  &none  &none  &none  &none
-&none  &kp C_AL_LOCK  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none
-                             &none  &none  &none    &none  &none  &none
+&none  &kp LC(LG(F))  &none  &none  &kp LC(LS(R))  &none    &none  &none  &none  &none  &none  &none
+&none  &kp LC(LG(A))  &none  &none  &none          &none    &none  &none  &none  &none  &none  &none
+&none  &kp LC(LG(Q))  &none  &none  &none          &none    &none  &none  &none  &none  &none  &none
+                             &none  &none          &none    &none  &none  &none
             >;
         };
     };
