@@ -103,6 +103,11 @@
             bindings = <&kp EQUAL>;
             key-positions = <16 19>;
         };
+
+        under_ {
+            bindings = <&kp UNDERSCORE>;
+            key-positions = <31 28>;
+        };
     };
 
     keymap {
