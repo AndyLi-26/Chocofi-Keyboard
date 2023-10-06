@@ -46,18 +46,13 @@
             compatible = "zmk,behavior-tap-dance";
             label = "A_TAB";
             #binding-cells = <0>;
-            bindings =
-                <&kp A>,
-                <&kp TAB>;
+            bindings = <&kp A>, <&kp TAB>;
         };
         quote: quote {
             compatible = "zmk,behavior-tap-dance";
             label = "QUOTE";
             #binding-cells = <0>;
-            bindings =
-                <&kp SQT>,
-                <&kp DOUBLE_QUOTES>,
-                <&kp GRAVE>;
+            bindings = <&kp SQT>, <&kp DOUBLE_QUOTES>, <&kp GRAVE>;
         };
         bracketL: bracketL {
             compatible = "zmk,behavior-tap-dance";
@@ -81,17 +76,13 @@
             compatible = "zmk,behavior-tap-dance";
             label = "W";
             #binding-cells = <0>;
-            bindings =
-                <&kp W>,
-                <&vim_write>;
+            bindings = <&kp W>, <&vim_write>;
         };
         q: q {
             compatible = "zmk,behavior-tap-dance";
             label = "Q";
             #binding-cells = <0>;
-            bindings =
-                <&kp Q>,
-                <&vim_quit>;
+            bindings = <&kp Q>, <&vim_quit>;
         };
     };
 
@@ -112,6 +103,11 @@
             bindings = <&kp TAB>;
             key-positions = <4 7>;
         };
+
+        space {
+            bindings = <&kp SPACE>;
+            key-positions = <38 39>;
+        };
     };
 
     keymap {
@@ -130,9 +126,9 @@
 
         num_dir {
             bindings = <
-&none    &split_h     &kp LA(LEFT_ARROW)  &kp UP_ARROW   &kp LA(RIGHT_ARROW)  &kp PAGE_UP      &kp PLUS   &kp N1  &kp N2          &kp N3  &kp ASTERISK  &none
-&none     &split_V   &kp LEFT_ARROW      &kp DOWN       &kp RIGHT            &kp PAGE_DOWN     &kp MINUS  &kp N4  &kp N5          &kp N6  &kp SLASH     &none
-&none    &kp LC(RG(A)) &kp HOME            &kp LG(TAB)    &kp END              &kp ENTER       &kp DOT    &kp N7  &kp N8          &kp N9  &kp N0        &none
+&none  &split_h       &kp LA(LEFT_ARROW)  &kp UP_ARROW   &kp LA(RIGHT_ARROW)  &kp PAGE_UP      &kp PLUS   &kp N1  &kp N2          &kp N3  &kp ASTERISK  &none
+&none  &split_V       &kp LEFT_ARROW      &kp DOWN       &kp RIGHT            &kp PAGE_DOWN    &kp MINUS  &kp N4  &kp N5          &kp N6  &kp SLASH     &none
+&none  &kp LC(RG(A))  &kp HOME            &kp LG(TAB)    &kp END              &kp ENTER        &kp DOT    &kp N7  &kp N8          &kp N9  &kp N0        &none
                                           &kp BACKSPACE  &none                &kp SPACE        &kp RET    &mo 3   &kp LEFT_SHIFT
             >;
 
