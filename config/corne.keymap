@@ -134,7 +134,7 @@
             bindings = <
 &none  &split_h    &kp LA(LEFT_ARROW)  &kp UP_ARROW   &kp LA(RIGHT_ARROW)  &kp PAGE_UP      &kp PLUS   &kp N1  &kp N2          &kp N3  &kp ASTERISK  &none
 &none  &split_V    &kp LEFT_ARROW      &kp DOWN       &kp RIGHT            &kp PAGE_DOWN    &kp MINUS  &kp N4  &kp N5          &kp N6  &kp SLASH     &none
-&none  &kp ESCAPE  &kp HOME            &kp LG(TAB)    &kp END              &space_enter     &kp DOT    &kp N7  &kp N8          &kp N9  &kp N0        &none
+&none  &kp DELETE  &kp HOME            &kp LG(TAB)    &kp END              &space_enter     &kp DOT    &kp N7  &kp N8          &kp N9  &kp N0        &none
                                        &kp BACKSPACE  &none                &kp SPACE        &kp RET    &mo 3   &kp LEFT_SHIFT
             >;
 
