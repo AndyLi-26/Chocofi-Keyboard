@@ -84,6 +84,12 @@
             #binding-cells = <0>;
             bindings = <&kp Q>, <&vim_quit>;
         };
+        space_enter: space_enter {
+            compatible = "zmk,behavior-tap-dance";
+            label = "SPACE_ENTER";
+            #binding-cells = <0>;
+            bindings = <&kp SPACE>, <&kp ENTER>;
+        };
     };
 
     combos {
@@ -115,10 +121,10 @@
 
         default_layer {
             bindings = <
-&none  &q           &kp W       &kp E          &kp R  &kp T    &kp Y      &kp U  &kp I                  &kp O                 &kp P            &none
-&none  &kp A        &kp S       &kp D          &kp F  &kp G    &kp H      &kp J  &kp K                  &kp L                 &kp SEMI         &none
-&none  &mt LCTRL Z  &mt LGUI X  &kp C          &kp V  &kp B    &kp N      &kp M  &kp COMMA              &mt RIGHT_GUI PERIOD  &mt RCTRL SLASH  &none
-                                &kp BACKSPACE  &mo 1  &mo 3    &kp ENTER  &mo 2  &mt LEFT_SHIFT ESCAPE
+&none  &q           &kp W       &kp E          &kp R  &kp T    &kp Y         &kp U  &kp I                  &kp O                 &kp P            &none
+&none  &kp A        &kp S       &kp D          &kp F  &kp G    &kp H         &kp J  &kp K                  &kp L                 &kp SEMI         &none
+&none  &mt LCTRL Z  &mt LGUI X  &kp C          &kp V  &kp B    &kp N         &kp M  &kp COMMA              &mt RIGHT_GUI PERIOD  &mt RCTRL SLASH  &none
+                                &kp BACKSPACE  &mo 1  &mo 3    &space_enter  &mo 2  &mt LEFT_SHIFT ESCAPE
             >;
 
             label = "alph";
@@ -128,7 +134,7 @@
             bindings = <
 &none  &split_h    &kp LA(LEFT_ARROW)  &kp UP_ARROW   &kp LA(RIGHT_ARROW)  &kp PAGE_UP      &kp PLUS   &kp N1  &kp N2          &kp N3  &kp ASTERISK  &none
 &none  &split_V    &kp LEFT_ARROW      &kp DOWN       &kp RIGHT            &kp PAGE_DOWN    &kp MINUS  &kp N4  &kp N5          &kp N6  &kp SLASH     &none
-&none  &kp ESCAPE  &kp HOME            &kp LG(TAB)    &kp END              &kp ENTER        &kp DOT    &kp N7  &kp N8          &kp N9  &kp N0        &none
+&none  &kp ESCAPE  &kp HOME            &kp LG(TAB)    &kp END              &space_enter     &kp DOT    &kp N7  &kp N8          &kp N9  &kp N0        &none
                                        &kp BACKSPACE  &none                &kp SPACE        &kp RET    &mo 3   &kp LEFT_SHIFT
             >;
 
@@ -148,10 +154,10 @@
 
         short_Cuts {
             bindings = <
-&none  &kp LC(LG(F))  &kp LG(LS(N))       &kp F12    &kp LG(LS(R))  &kp C_VOLUME_UP      &none  &kp C_REWIND        &none  &none  &none  &none
-&none  &kp LC(LG(A))  &kp LC(LEFT_ARROW)  &kp SPACE  &kp LC(RIGHT)  &kp K_MUTE           &none  &kp C_PLAY_PAUSE    &none  &none  &none  &none
-&none  &kp LC(LG(Q))  &kp LG(X)           &kp LG(C)  &kp LG(V)      &kp C_VOLUME_DOWN    &none  &kp C_FAST_FORWARD  &none  &none  &none  &none
-                                          &none      &none          &none                &none  &none               &none
+&none  &kp LC(LG(F))  &kp LG(LS(N))       &kp F12     &kp LG(LS(R))  &kp C_VOLUME_UP      &none  &kp C_REWIND        &none  &none  &none  &none
+&none  &kp LC(LG(A))  &kp LC(LEFT_ARROW)  &kp ESCAPE  &kp LC(RIGHT)  &kp K_MUTE           &none  &kp C_PLAY_PAUSE    &none  &none  &none  &none
+&none  &kp LC(LG(Q))  &kp LG(X)           &kp LG(C)   &kp LG(V)      &kp C_VOLUME_DOWN    &none  &kp C_FAST_FORWARD  &none  &none  &none  &none
+                                          &none       &none          &none                &none  &none               &none
             >;
 
             label = "macro";
