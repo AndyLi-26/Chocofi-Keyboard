@@ -138,10 +138,10 @@
 
         num_dir {
             bindings = <
-&none  &split_h  &kp LA(LEFT_ARROW)  &kp UP_ARROW      &kp LA(RIGHT_ARROW)  &kp PAGE_UP      &kp PLUS   &kp N1  &kp N2          &kp N3  &kp ASTERISK  &none
-&none  &split_V  &kp LEFT_ARROW      &kp DOWN          &kp RIGHT            &kp PAGE_DOWN    &kp MINUS  &kp N4  &kp N5          &kp N6  &kp SLASH     &none
-&none  &detatch  &kp HOME            &kp LG(TAB)       &kp END              &space_enter     &kp DOT    &kp N7  &kp N8          &kp N9  &kp N0        &none
-                                     &kp LEFT_COMMAND  &none                &kp SPACE        &kp RET    &mo 3   &kp LEFT_SHIFT
+&none  &split_h  &kp LA(LEFT_ARROW)  &kp UP_ARROW      &kp LA(RIGHT_ARROW)  &kp PAGE_UP       &kp PLUS   &kp N1  &kp N2          &kp N3  &kp ASTERISK  &none
+&none  &split_V  &kp LEFT_ARROW      &kp DOWN          &kp RIGHT            &kp PAGE_DOWN     &kp MINUS  &kp N4  &kp N5          &kp N6  &kp SLASH     &none
+&none  &detatch  &kp HOME            &kp LG(TAB)       &kp END              &space_enter      &kp DOT    &kp N7  &kp N8          &kp N9  &kp N0        &none
+                                     &kp LEFT_COMMAND  &none                &kp LEFT_SHIFT    &kp RET    &mo 3   &kp LEFT_SHIFT
             >;
 
             label = "arr+num";
@@ -163,7 +163,7 @@
 &none  &kp LC(LG(F))  &kp LG(LS(N))       &kp F12     &kp LG(LS(R))  &kp C_VOLUME_UP      &kp C_REWIND        &kp F1     &kp BACKSPACE  &kp DEL  &none  &none
 &none  &kp LC(LG(A))  &kp LC(LEFT_ARROW)  &kp ESCAPE  &kp LC(RIGHT)  &kp K_MUTE           &kp C_PLAY_PAUSE    &kp ENTER  &none          &none    &none  &none
 &none  &kp LC(LG(Q))  &kp LG(X)           &kp LG(C)   &kp LG(V)      &kp C_VOLUME_DOWN    &kp C_FAST_FORWARD  &kp F2     &none          &none    &none  &none
-                                          &none       &none          &none                &none               &none      &none
+                                          &none       &kp LEFT_ALT   &none                &none               &none      &none
             >;
 
             label = "macro";
