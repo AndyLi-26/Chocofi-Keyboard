@@ -149,9 +149,9 @@
 
         char {
             bindings = <
-&none  &none  &none  &kp AMPERSAND  &kp EXCLAMATION  &kp PRCNT     &kp GRAVE          &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp BSLH        &none  &none
-&none  &none  &none  &kp PIPE       &kp TILDE        &kp HASH      &kp APOS           &kp LBKT              &kp RBKT               &kp UNDERSCORE  &none  &none
-&none  &none  &none  &kp CARET      &kp AT_SIGN      &kp DOLLAR    &kp DOUBLE_QUOTES  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp FSLH        &none  &none
+&none  &none  &none  &kp AMPERSAND  &kp EXCLAMATION  &kp PRCNT     &kp GRAVE          &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp BSLH        &kp GREATER_THAN  &none
+&none  &none  &none  &kp PIPE       &kp TILDE        &kp HASH      &kp APOS           &kp LBKT              &kp RBKT               &kp UNDERSCORE  &none             &none
+&none  &none  &none  &kp CARET      &kp AT_SIGN      &kp DOLLAR    &kp DOUBLE_QUOTES  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp FSLH        &none             &none
                      &kp LGUI       &none            &kp SPACE     &kp RET            &none                 &kp RALT
             >;
 
