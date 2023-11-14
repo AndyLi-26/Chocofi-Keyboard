@@ -119,6 +119,13 @@
             bindings = <&kp LC(B) &kp NUMBER_3>;
             label = "WIN3";
         };
+
+        rename: rename {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(B) &kp R>;
+            label = "RENAME";
+        };
     };
 
     behaviors {
@@ -251,10 +258,10 @@
 
         tmux_vi {
             bindings = <
-&none  &split_h  &detatch  &none  &none  &none    &viCopy   &win1     &win2     &win3     &none  &none
-&none  &split_V    &none  &none  &none  &none    &resizeL  &resizeD  &resizeU  &resizeR  &none  &none
-&none  &VIsleep    &none  &none  &none  &none    &newWin   &none     &none     &none     &none  &none
-                           &none  &none  &none    &none     &none     &none
+&none  &split_h  &none  &rename   &none  &none    &viCopy   &win1     &win2     &win3     &none  &none
+&none  &split_V  &none  &detatch  &none  &none    &resizeL  &resizeD  &resizeU  &resizeR  &none  &none
+&none  &VIsleep  &none  &none     &none  &none    &newWin   &none     &none     &none     &none  &none
+                        &none     &none  &none    &none     &none     &none
             >;
 
             label = "tmux_vi";
