@@ -125,31 +125,31 @@
             bindings = <&kp LC(B) &kp NUMBER_4>;
             label = "WIN4";
         };
-        win4: win5 {
+        win5: win5 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LC(B) &kp NUMBER_5>;
             label = "WIN5";
         };
-        win4: win6 {
+        win6: win6 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LC(B) &kp NUMBER_6>;
             label = "WIN6";
         };
-        win4: win7 {
+        win7: win7 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LC(B) &kp NUMBER_7>;
             label = "WIN7";
         };
-        win4: win8 {
+        win8: win8 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LC(B) &kp NUMBER_8>;
             label = "WIN8";
         };
-        win4: win9 {
+        win9: win9 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LC(B) &kp NUMBER_9>;
