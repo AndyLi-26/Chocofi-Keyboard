@@ -314,10 +314,10 @@
 
         tmux_vi {
             bindings = <
-&none  &split_h  &none     &resizeU  &cyclePane  &none    &viCopy   &win1  &win2  &win3  &none  &none
-&none  &split_V  &resizeL  &resizeD  &resizeR    &none    &detatch  &win4  &win5  &win6  &none  &none
-&none  &VIsleep  &none     &none     &none       &none    &newWin   &win7  &win8  &win9  &none  &none
-                           &none     &none       &none    &none     &none  &none
+&none  &split_h  &none     &resizeU  &cyclePane  &none    &viCopy  &win1  &win2  &win3  &detatch  &none
+&none  &split_V  &resizeL  &resizeD  &resizeR    &none    &rename  &win4  &win5  &win6  &none     &none
+&none  &VIsleep  &none     &none     &none       &none    &newWin  &win7  &win8  &win9  &none     &none
+                           &none     &none       &none    &none    &none  &none
             >;
 
             label = "tmux_vi";
