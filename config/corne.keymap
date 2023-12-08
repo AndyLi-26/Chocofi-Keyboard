@@ -311,8 +311,8 @@
         tmux_vi {
             bindings = <
 &none  &split_h  &none     &resizeU  &rename   &none    &viCopy   &win1       &win2     &win3     &none  &none
-&none  &split_V  &resizeL  &resizeD  &resizeR  &none    &resizeL  &win4       &resizeU  &resizeR  &none  &none
-&none  &VIsleep  &none     &none     &none     &none    &newWin   &cyclePane  &none     &none     &none  &none
+&none  &split_V  &resizeL  &resizeD  &resizeR  &none    &detatch  &win4       &win5     &win6  &none  &none
+&none  &VIsleep  &none     &none     &none     &none    &newWin   &cyclePane  &win7     &win8     &none  &none
                            &none     &none     &none    &none     &none       &none
             >;
 
