@@ -133,6 +133,13 @@
             bindings = <&kp LC(B) &kp SPACE>;
             label = "CYCLEPANE";
         };
+
+        win4: win4 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(B) &kp NUMBER_4>;
+            label = "WIN4";
+        };
     };
 
     behaviors {
@@ -272,10 +279,10 @@
 
         tmux_vi {
             bindings = <
-&none  &split_h  &none  &none     &rename  &none    &viCopy   &win1       &win2     &win3     &none  &none
-&none  &split_V  &none  &detatch  &none    &none    &resizeL  &resizeD    &resizeU  &resizeR  &none  &none
-&none  &VIsleep  &none  &none     &none    &none    &newWin   &cyclePane  &none     &none     &none  &none
-                        &none     &none    &none    &none     &none       &none
+&none  &split_h  &none     &resizeU  &rename   &none    &viCopy   &win1       &win2     &win3     &none  &none
+&none  &split_V  &resizeL  &resizeD  &resizeR  &none    &resizeL  &win4       &resizeU  &resizeR  &none  &none
+&none  &VIsleep  &none     &none     &none     &none    &newWin   &cyclePane  &none     &none     &none  &none
+                           &none     &none     &none    &none     &none       &none
             >;
 
             label = "tmux_vi";
